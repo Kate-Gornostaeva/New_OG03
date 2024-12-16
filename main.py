@@ -22,3 +22,33 @@ def plot_line_graph(x, y, title="Line Graph", xlabel="X-axis", ylabel="Y-axis"):
 x_values = [1, 2, 3, 4, 5]
 y_values = [2, 3, 5, 7, 11]
 plot_line_graph(x_values, y_values, title="Пример линейного графика", xlabel="Время", ylabel="Значение")
+
+
+
+def create_pie_chart(data, labels, title='Круговая диаграмма'):
+    """
+    Создает круговую диаграмму с заданными данными и метками.
+
+    :param data: Список значений для круговой диаграммы.
+    :param labels: Список меток для каждого сегмента диаграммы.
+    :param title: Заголовок диаграммы.
+    """
+    # Создаем круговую диаграмму
+    plt.figure(figsize=(8, 8))  # Устанавливаем размер фигуры
+    plt.pie(data, labels=labels, autopct='%1.1f%%', startangle=90)
+
+    # Устанавливаем равные оси, чтобы круговая диаграмма была кругом
+    plt.axis('equal')
+
+    # Устанавливаем заголовок диаграммы
+    plt.title(title)
+
+    # Показываем диаграмму
+    plt.show()
+
+# Пример данных
+data = [30, 20, 25, 25]
+labels = ['Категория A', 'Категория B', 'Категория C', 'Категория D']
+
+# Создаем круговую диаграмму
+create_pie_chart(data, labels, title='Пример круговой диаграммы')
