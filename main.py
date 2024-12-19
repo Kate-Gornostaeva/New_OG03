@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 def plot_line_graph(x, y, title="Line Graph", xlabel="X-axis", ylabel="Y-axis"):
-    # Функция для создания линейного графика.  
+    # Функция для создания линейного графика.
     # :param x: Список или массив значений по оси X.
     # :param y: Список или массив значений по оси Y.
     # :param title: Заголовок графика.
